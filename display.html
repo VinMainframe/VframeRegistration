@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Data</title>
+</head>
+<body>
+    <h1>Registered Data</h1>
+    <?php
+    // Dummy PHP code (requires a server with PHP support)
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $age = $_POST["age"];
+        echo "<p><strong>Name:</strong> $name</p>";
+        echo "<p><strong>Email:</strong> $email</p>";
+        echo "<p><strong>Age:</strong> $age</p>";
+    } else {
+        echo "<p>No data submitted.</p>";
+    }
+    ?>
+    <br>
+    <a href="index.html">Go back to Registration Form</a>
+</body>
+</html>
